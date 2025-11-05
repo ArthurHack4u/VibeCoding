@@ -1,0 +1,60 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "interbloqueo",
+            "request": "launch",
+            "mainClass": "interbloqueo",
+            "projectName": "vibe coding_ec837cf9"
+        },
+        {
+            "type": "java",
+            "name": "P1_Spinlock",
+            "request": "launch",
+            "mainClass": "P1_Spinlock",
+            "projectName": "vibe coding_ec837cf9"
+        },
+        {
+            "type": "java",
+            "name": "Practica1_Spinlock",
+            "request": "launch",
+            "mainClass": "Practica1_Spinlock",
+            "projectName": "vibe coding_ec837cf9"
+        },
+        {
+            "type": "java",
+            "name": "practica_hilos",
+            "request": "launch",
+            "mainClass": "practica_hilos",
+            "projectName": "vibe coding_ec837cf9"
+        },
+        {
+            "type": "java",
+            "name": "Silksong",
+            "request": "launch",
+            "mainClass": "Silksong",
+            "projectName": "vibe coding_ec837cf9"
+        },
+        {
+            "type": "java",
+            "name": "Rs232",
+            "request": "launch",
+            "mainClass": "Rs232",
+            "projectName": "vibe coding_ec837cf9"
+        },
+        {
+            "name": "C/C++: clang Compilar y depurar el archivo activo",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang compilar archivo activo"
+        }
+    ],
+    "version": "2.0.0"
+}

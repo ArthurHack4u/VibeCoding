@@ -1,0 +1,126 @@
+h1 {
+    background-color: rgb(255, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4em;
+    color: aliceblue;
+    border-radius: 800px;
+    text-align: center;
+    align-items: center;
+
+}
+
+.logo-container {
+    text-align: center;
+}
+
+
+.index {
+    padding: 1rem 2rem;
+    border: 1px black solid;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px black;
+    color: white;
+    font-family: 'Courier New', Courier, mAonospace;
+    font-size: rem;
+    font-weight: 700;
+    background-color: #1494cf;
+}
+
+.ver {
+    color: white;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #012538;
+    color: white;
+}
+
+nav {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+td {
+    padding: 20px;
+}
+
+.comprar,
+button,
+.facebook,
+.instagram,
+.twitter {
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #1494cf;
+    padding: 8px 1rem;
+    border: 1px solid;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+#tarjeta-seccion {
+    display: none;
+}
+
+#tarjeta:checked~#tarjeta-seccion {
+    display: block;
+}
+
+.comprar:hover,
+button:hover,
+.facebook:hover,
+.instagram:hover,
+.twitter:hover {
+    background-color: #808080;
+}
+
+.facebook,
+.instagram,
+.twitter {
+    padding: 1rem 2rem;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.instagram {
+    background-color: #E1306C;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-right: 20px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+footer {
+    background-color: #012538;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}

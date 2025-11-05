@@ -1,0 +1,93 @@
+h1{
+    background-color: cyan;
+    color: green;
+    box-shadow: 1rem, 1rem, 1rem black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    display: inline;
+}
+
+.botonguardar {
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    background-color: #666;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 9px;
+    box-shadow: 2px 2px 2px black;
+    text-decoration: none;
+}
+
+label {
+    font-weight: bold;
+    font-family: Geova UI, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.botonsi{
+    background-color: blue;
+}
+
+.botonno{
+    background-color: red;
+}
+
+/*span {
+    display: inline-block;
+    width: 300px;
+    border: 3px solid #5468cc;
+}*/
+.caja-azul {
+    border: 2px solid black;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 70px;
+}
+.caja-roja {
+    border: 2px solid black;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    font-size: 70px;
+}
+
+.caja-verde{
+    background-color: forestgreen;
+    color: white;
+    flex-shrink: 3;
+    flex-basis: 200px;
+}
+
+.caja-purpura{
+    background-color: purple;
+    color: white;
+    flex-shrink: 3;
+    flex-basis: 200px;
+}
+
+.caja-naranja{
+    background-color: peru;
+    color: white;
+    flex-shrink: 3;
+    flex-basis: 200px;
+}
+
+.container-flex{
+    display: flex;
+}
+
+.container-flex{
+    flex-grow: 1;
+}
+
+.container-flex div{
+    flex-shrink: 3;
+    flex-basis: 200px;
+}
+

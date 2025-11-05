@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+
+<center>
+
+    <body>
+        <h1>
+            Inicio de sesión
+        </h1>
+        <form class="form" action="#" method="post">
+            <label class="form-label" for="yo">
+                name: <input name="moyete" type="name" class="form-control" id="yo" placeholder="Ingresa tu nombre" />
+            </label>
+
+            <br><br>
+            <label class="form-label" for="contra">
+                password: <input name="pepe" type="password" class="form-control" id="contra"
+                    placeholder="Ingresa tu contraseña" />
+            </label>
+
+            <br><br>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="rememberMe" />
+                <label class="form-check-label" for="rememberMe">
+                    Recuérdame
+                </label>
+            </div>
+            <br><br>
+            
+            <input
+            class=" btn btn-success"
+            type="button"
+            value="Olvide mi contraseña"
+            data-bs-toggle="modal"
+            data-bs-target="#mi-modal">
+            <input class="btn btn-primary"
+            type="submit" 
+            value="Iniciar sesión">
+            <br>
+            
+            
+        <div id="mi-modal" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content"> 
+                    <div class="modal-header">
+                        <h5 class="modal-title">Bienvenido</h5>
+                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    </div>
+                    <div class="modal-body">
+                        <p>Has conseguido hacer login. Bastante astuto!!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
+    <input placeholder="Nombre" />
+    <br>
+    <br>
+    <input type="radio" name="setso"> Hombre
+    <input type="radio" name="setso"> Mujer
+    <input type="radio" name="setso"> Otro
+    <br>
+    <br>
+    Fecha: <input type="datetime-local" name="fecha">
+    <br>
+    <br>
+    Color favorito: <input type="color" name="color">
+    <br>
+    <br>
+    Archivo: <input type="file" name="archivo">
+    <br>
+    <br>
+    Correo: <input type="email" name="correo">
+    <br>
+    <br>
+    Contraseña: <input type="password" name="password">
+    <br>
+    <br>
+    Estado civil:
+    <select name="estado">
+        <option value="soltero">Soltero</option>
+        <option value="casado">Casado</option>
+        <option value="divorciado">Divorciado</option>  
+        <option value="viudo">Viudo</option>
+        <option value="union libre">Union libre</option>
+    </select>
+    <br><br>
+    Quejas o sugerencias:
+    <br>
+    <textarea name="quejas" placeholder="Escribe aquí tus quejas o sugerencias"></textarea>
+    <br>
+    <br>
+    <input type="checkbox"> Acepto términos y condiciones
+    <br>
+    <br>
+    <button>Cancelar</button>
+    <button type="submit">Enviar</button>
+-->
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+            </script>
+    </body>
+</center>
+
+</html>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RS232">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/PROYECTO EXAMEN FINAL/RS232/dist/RS232.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

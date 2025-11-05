@@ -1,0 +1,236 @@
+/* Reseteo de márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body y fuente */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff; /* Fondo blanco por defecto */
+  color: #333;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Modo oscuro */
+body.active {
+  background-color: rgb(0, 0, 0); /* Fondo oscuro */
+  color: #f4f4f4; /* Texto claro */
+}
+
+/* Encabezado */
+header {
+  background-color: #fff; /* Fondo blanco */
+  color: black; /* Texto en negro */
+  padding: 20px;
+  border-bottom: 2px solid #000; /* Borde inferior */
+}
+
+header.active {
+  background-color: #040404; /* Fondo oscuro */
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, rgb(237, 237, 237), rgb(28, 27, 27)); /* Define el gradiente */
+-webkit-background-clip: text;
+  color: transparent; 
+  font-size: 20em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subtitle-text {
+  background-image: linear-gradient(to right, rgb(237, 237, 237), rgb(28, 27, 27)); /* Define el gradiente */
+  -webkit-background-clip: text;
+  color: transparent; 
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -78px;
+}
+
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #ff0000; /* Color de hover */
+}
+
+body.active nav a {
+  color: #f4f4f4; /* Color blanco para los enlaces en modo oscuro */
+}
+
+body.active nav a:hover {
+  color: #ff0000; /* Mantener el color de hover en modo oscuro */
+}
+
+/* Estilos para el botón de cambio de tema */
+.dark-mode {
+  width: 60px;
+  height: 30px;
+  margin-top: -3px;
+  display: flex;
+  align-items: center;
+  border-radius: 999px;
+  background-color: #DFDEDE;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+body.active .dark-mode {
+  background-color: #d4d4d4;
+}
+
+.dark-mode .circle {
+  width: 50%;
+  height: 80%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  transform: translateX(10%);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+body.active .circle {
+  transform: translateX(140%);
+  background-color: #2A2A2C;
+}
+
+.dark-mode .circle ion-icon {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+
+.dark-mode .circle .moon {
+  color: white;
+  transform: translateY(-120%);
+}
+
+body.active .circle .moon {
+  transform: translateX(0);
+}
+
+.dark-mode .circle .sun {
+  color: #FCDE5B;
+}
+
+body.active .circle .sun {
+  transform: translateY(120%);
+}
+
+/* Eliminación de bordes redondeados y sombras */
+.container, header, .main-container, main, aside, footer {
+  background-color: transparent; /* Fondo transparente */
+  border-radius: 0; /* Sin bordes redondeados */
+  padding: 20px;
+  box-shadow: none; /* Sin sombras */
+  margin-bottom: 0; /* Sin espaciado entre secciones */
+}
+
+/* Ajuste para el modo oscuro */
+body.active .container,
+body.active header,
+body.active .main-container,
+body.active main,
+body.active aside,
+body.active footer {
+  background-color: #000000; /* Fondo oscuro en modo oscuro */
+}
+
+/* Contenedor principal */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+main {
+  flex: 3;
+}
+
+
+
+.glosario dl {
+  margin-top: 20px;
+}
+
+.glosario dt {
+  font-weight: bold;
+  color: #000000;
+}
+
+.glosario dd {
+  margin-left: 20px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+body.active .glosario dd {
+  color: #f4f4f4;
+}
+
+body.active .glosario dt {
+  color: #f4f4f4; 
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  aside {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,44 @@
+/* ---- Estilos para la Tabla de Registros ---- */
+
+/* Hacemos que el contenedor de la tabla se vea como una tarjeta,
+  usando las variables de Bootstrap para que funcione con 
+  light/dark mode automáticamente.
+*/
+.table-responsive {
+    /* Le ponemos el fondo de las tarjetas */
+    background-color: var(--bs-card-bg);
+    
+    /* Usamos los bordes y sombras de las tarjetas */
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+    box-shadow: var(--bs-box-shadow-sm);
+}
+
+/* Le quitamos el margen de abajo a la tabla, ya que el 
+  contenedor .table-responsive ahora tiene el borde.
+*/
+.table-responsive .table {
+    margin-bottom: 0;
+}
+
+/* Hacemos que el encabezado (thead) resalte más.
+*/
+.table > thead {
+    /* Color de fondo sutil (funciona en light/dark) */
+    background-color: var(--bs-body-tertiary); 
+}
+
+.table > thead > tr > th {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+/* Un color de hover más notorio que también
+  respeta el light/dark mode.
+*/
+.table-hover > tbody > tr:hover > * {
+    background-color: var(--bs-tertiary-bg);
+    color: var(--bs-emphasis-color);
+}

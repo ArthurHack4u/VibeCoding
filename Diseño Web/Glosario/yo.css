@@ -1,0 +1,188 @@
+/* Reseteo de márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body y fuente */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff; /* Fondo claro por defecto */
+  color: #333;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Modo oscuro */
+body.active {
+  background-color: #1E1E2F; /* Fondo oscuro */
+  color: #f4f4f4; /* Texto claro */
+}
+
+/* Encabezado */
+header {
+  background-color: #fff; /* Fondo blanco */
+  color: black; /* Texto en negro */
+  padding: 20px;
+  border-bottom: 2px solid #000;
+}
+
+header.active {
+  background-color: #1E1E2F; /* Fondo oscuro */
+  color: white; /* Texto blanco */
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #48ff00;
+}
+
+/* Estilos para el modo oscuro en los enlaces Inicio y Yo */
+body.active nav a {
+  color: #f4f4f4; /* Color blanco para los enlaces en modo oscuro */
+}
+
+body.active nav a:hover {
+  color: #48ff00; /* Mantener el color de hover en modo oscuro */
+}
+
+/* Estilos para el botón de cambio de tema */
+.dark-mode {
+  width: 60px;
+  height: 30px;
+  margin-top: -3px;
+  display: flex;
+  align-items: center;
+  border-radius: 999px;
+  background-color: #DFDEDE;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+body.active .dark-mode {
+  background-color: #f8f8f8;
+}
+
+.dark-mode .circle {
+  width: 50%;
+  height: 80%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  transform: translateX(10%);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+body.active .circle {
+  transform: translateX(140%);
+  background-color: #2A2A2C;
+}
+
+.dark-mode .circle ion-icon {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+
+.dark-mode .circle .moon {
+  color: white;
+  transform: translateY(-120%);
+}
+
+body.active .circle .moon {
+  transform: translateX(0);
+}
+
+.dark-mode .circle .sun {
+  color: #FCDE5B;
+}
+
+body.active .circle .sun {
+  transform: translateY(120%);
+}
+
+/* Contenedor del contenido principal */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.sobre-mi {
+  max-width: 600px;
+}
+
+/* Imagen de perfil redondeada */
+.foto img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Estilo de los textos dentro de la sección sobre mí */
+.informacion h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.informacion p {
+  font-size: 1rem;
+  color: #5555559b;
+}
+
+body.active p {
+  color: #b1b1b1; /* Color blanco para los enlaces en modo oscuro */
+}
+
+
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Diseño Web/Ecommerce/assets/styles/styles.css">
+    <title>Moran Racing Shop - Formulario de compra</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li>
+                    <a href="index.html" class="index">Inicio</a>
+                    <a href="productos.html" class="index">Productos</a>
+                    <a href="contacto.html" class="index">Contacto</a>
+
+            </li>
+        </nav>
+        <h1>MORAN RACING SHOP</h1>
+    </header>
+
+    <main>
+        <h2>Formulario de compra</h2>
+        <form action="/Ecommerce/confirmacion.html" method="#" aria-labelledby="formulario-compra">
+            <fieldset>
+                <legend>Datos de entrega</legend>
+                <br>
+                <label for="nombre" aria-label="Ingrese el Nombre de cliente">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" required aria-required="true" />
+
+                <label for="apellido" aria-label="Ingrese el Apellido del cliente">Apellido: </label>
+                <input type="text" id="apellido" name="apellido" required aria-required="true" />
+
+                <label for="numero" aria-label="Ingrese el Numero telefonico del que recibe">Numero: </label>
+                <input type="number" name="numero" id="numero">
+                <br><br>
+                <br>
+                <label for="pais" aria-label="Seleccione su País de residencia del cliente">País: </label>
+                <select name="pais" id="pais" required aria-required="true">
+                    <option value="" disabled selected>Seleccione su país</option>
+                    <option value="mexico">México</option>
+                    <option value="usa">Estados Unidos</option>
+                    <option value="canada">Canadá</option>
+                    <option value="uk">Reino Unido</option>
+                    <option value="australia">Australia</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <label for="estado" aria-label="Ingrese su Estado o provincia del cliente">Estado/Provincia: </label>
+                <input type="text" id="estado" name="estado" required aria-required="true" />
+                <br><br>
+                <br>
+
+                <label for="domicilio" aria-label="Ingrese la Primera linea de dirección">Primera linea: </label>
+                <input type="text" id="domicilio" name="domicilio" required aria-required="true" />
+
+                <label for="calle" aria-label="Ingrese el nombre de Calle">Calle: </label>
+                <input type="text" id="calle" name="calle" required />
+
+                <label for="numeroext" aria-label="Ingrese el Número exterior de la casa">Número exterior: </label>
+                <input type="number" id="numeroext" name="numero" required />
+
+                <label for="numeroint" aria-label="Ingrese el Número interior de la casa, solo si este existe">Número interior: </label>
+                <input type="number" id="numeroint" name="numero" />
+
+                <label for="codigo_postal" aria-label="Ingrese su Código postal">Código Postal: </label>
+                <input type="text" id="codigo_postal" name="codigo_postal" required />
+                <br><br>
+                <br>
+                <label for="email" aria-label="Ingrese el Correo electrónico del cliente">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required aria-required="true"
+                    placeholder="ejemplo@correo.com" />
+
+            </fieldset>
+            <br><br>
+
+            <fieldset>
+                <legend>Datos de pago</legend>
+
+                <p>Seleccione su método de pago:</p>
+
+                <input type="radio" id="tarjeta" name="metodo_pago" value="tarjeta" required />
+                <label for="tarjeta">Tarjeta de crédito/débito</label>
+
+                <input type="radio" id="paypal" name="metodo_pago" value="paypal" required />
+                <label for="paypal">PayPal</label>
+
+                <input type="radio" id="ventanilla" name="metodo_pago" value="ventanilla" required />
+                <label for="ventanilla">Pago en ventanilla</label>
+
+                <br><br>
+
+                <p>Si selecciona tarjeta, ingrese los siguientes datos:</p>
+
+                <label for="nombre_tarjeta">Nombre en la tarjeta:</label>
+                <input type="text" id="nombre_tarjeta" name="nombre_tarjeta" aria-required="true" />
+
+                <label for="numero_tarjeta">Número de tarjeta:</label>
+                <input type="number" id="numero_tarjeta" name="numero_tarjeta" aria-required="true" />
+
+                <label for="fecha_expiracion">Fecha de expiración:</label>
+                <input type="text" id="fecha_expiracion" name="fecha_expiracion" aria-required="true"
+                    placeholder="mm/aa" />
+
+                <label for="cvv">CVV:</label>
+                <input type="number" id="cvv" name="cvv" aria-required="true" />
+
+                <p>Si eligió PayPal o Ventanilla, se le redirigirá al finalizar la compra para completar el pago.</p>
+
+                <input type="checkbox" id="terminos" name="terminos" required />
+                <label for="terminos">Acepto terminos y condiciones</label>
+
+            </fieldset>
+
+            <br><br>
+            <button type="submit" aria-label="Confirmar compra">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <CENTER>
+            <p>&copy; 2025 Moran Racing Shop</p>
+        </CENTER>
+    </footer>
+</body>
+
+</html>
